@@ -1,0 +1,60 @@
+<svg width="300" height="100" viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景云 -->
+    <path d="M45 25
+           C35 25, 25 30, 25 40
+           C15 40, 10 50, 15 60
+           C20 70, 30 70, 40 65
+           L70 65
+           C80 70, 90 65, 90 55
+           C90 45, 80 40, 70 45
+           C70 35, 60 25, 45 25"
+          fill="#64B5F6"
+          filter="drop-shadow(0 2px 3px rgba(0,0,0,0.2))" />
+    <!-- 文件夹 -->
+    <path d="M30 35
+           L50 35
+           L55 40
+           L80 40
+           L80 75
+           L30 75
+           Z"
+          fill="#FFA726"
+          filter="drop-shadow(0 2px 3px rgba(0,0,0,0.1))" />
+    <!-- 文件夹翻盖 -->
+    <path d="M30 35
+           L50 35
+           L55 40
+           L80 40
+           L75 50
+           L35 50
+           Z"
+          fill="#FFB74D" />
+    <!-- 雪花/星形图案 -->
+    <g transform="translate(55, 60)">
+        <!-- 外圈装饰 -->
+        <circle cx="0" cy="0" r="8" fill="#E3F2FD" />
+        <!-- 中心点 -->
+        <circle cx="0" cy="0" r="2" fill="#1976D2" />
+        <!-- 放射线 -->
+        <g stroke="#1976D2" stroke-width="1.5">
+            <line x1="-6" y1="0" x2="6" y2="0" />
+            <line x1="0" y1="-6" x2="0" y2="6" />
+            <line x1="-4" y1="-4" x2="4" y2="4" />
+            <line x1="-4" y1="4" x2="4" y2="-4" />
+        </g>
+    </g>
+    <!-- Omni Vault 文字 -->
+    <text x="110" y="45"
+          font-family="Arial, sans-serif"
+          font-size="32"
+          font-weight="bold"
+          fill="#1976D2">
+        OMNI
+    </text>
+    <text x="110" y="80"
+          font-family="Arial, sans-serif"
+          font-size="42"
+          fill="#455A64">
+        Vault
+    </text>
+</svg>

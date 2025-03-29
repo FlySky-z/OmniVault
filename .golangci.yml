@@ -1,0 +1,30 @@
+# 设置运行超时
+run:
+  timeout: 3m
+
+# 启用的 linters
+linters:
+  enable:
+    - govet        # 发现潜在错误
+    - revive       # 代码风格建议
+    - staticcheck  # 代码静态分析
+    - ineffassign  # 检查未使用的变量赋值
+    - errcheck     # 检查未处理的错误
+
+# 过滤特定文件或目录
+linters-settings:
+  govet:
+    enable-all: true
+
+# 可选：忽略特定路径
+exclude-dirs:
+  - /vendor/
+  - /generated/
+  - /frontend/
+
+# 可选：禁用某些规则
+issues:
+  exclude-rules:
+    - path: _test\.go
+      linters:
+        - errcheck
